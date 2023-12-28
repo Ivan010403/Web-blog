@@ -1,0 +1,15 @@
+[Unit]
+Description=web-blog
+After=network.target
+
+[Service]
+User=root
+WorkingDirectory=/root/apps/web-blog
+ExecStart=/root/apps/web-blog/web-blog
+Restart=always
+RestartSec=4
+StandardOutput=inherit
+EnvironmentFile=/root/apps/web-blog/config.env
+
+[Install]
+WantedBy=multi-user.target
