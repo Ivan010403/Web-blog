@@ -61,7 +61,7 @@ func (s *Storage) SaveArticle(author string, topic string, content string) error
 	return nil
 }
 
-// TODO: если нет такого id, то ничего не делаем!!!
+// TODO: если нет такого id, то ничего не делаем!!! Иначе лишние запросы в базу данных
 
 func (s *Storage) DeleteArticle(ID string) error {
 	const op = "internal.storage.postgresql.DeleteArticle"
