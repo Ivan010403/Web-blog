@@ -1,6 +1,6 @@
 module webblog
 
-go 1.22rc1
+go 1.21.5
 
 require (
 	github.com/BurntSushi/toml v1.2.1 // indirect
