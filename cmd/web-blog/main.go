@@ -49,6 +49,7 @@ func main() {
 		IdleTimeout:  cfg.HTTPServer.Idle_timeout,
 	}
 
+	fmt.Println("Its okay")
 	if err := srv.ListenAndServe(); err != nil {
 		fmt.Println("failed ro start server")
 	}
